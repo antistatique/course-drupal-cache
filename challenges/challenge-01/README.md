@@ -1,0 +1,1 @@
+- ../course-drupal-cache-challenges/challenges/challenge-01/module/challenge_01:/var/www/web/modules/custom/challenge_01
