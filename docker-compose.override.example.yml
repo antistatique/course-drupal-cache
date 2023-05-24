@@ -1,0 +1,28 @@
+version: '3.6'
+
+services:
+  # Drupal development server
+  dev:
+    hostname: dev
+
+    ports:
+      - "8090:80"
+    environment:
+      BASE_URL: http://localhost:8090
+
+    #volumes:
+    # Challenges
+    #   - ../challenges/challenge-01/module/challenge_01:/var/www/web/modules/custom/challenge_01
+
+    # For Windows only:
+    # build:
+    #   args:
+    # Set your user id (like 1000) to run the container with the same user as your system and ensure
+    # files have the right permissions (default is to "www-data", doesn't work on OSX)
+    # user: <YOUR USER ID>
+
+  # Database
+  db:
+    ports:
+      - "13306:3306"
+
