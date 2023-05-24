@@ -1,0 +1,5 @@
+name: Drupal Rendering & Caching magic revealed - Challenge 02
+description: "Caches Anatomy"
+package: Antistatique Coaching
+type: module
+core_version_requirement: ^10

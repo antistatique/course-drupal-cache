@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Challenge 02 module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function challenge_02_theme(): array {
+    return [
+      'challenge_02___recipes_collection_block' => [
+        'variables' => ['recipes' => []],
+        'template' => 'block--challenge-02--recipes-collection',
+      ],
+    ];
+}
