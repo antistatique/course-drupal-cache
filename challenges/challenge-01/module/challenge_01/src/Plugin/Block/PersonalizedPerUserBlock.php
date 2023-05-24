@@ -20,7 +20,7 @@ class PersonalizedPerUserBlock extends BlockBase {
       '#markup' => $this->t('<p>Today\'s funny emoji just for you: @emoji</p>
         <p>(Hand picked at @time!)</p>', [
           '@emoji' => $funny_emojis[array_rand($funny_emojis)],
-        '@time' => (int) microtime(TRUE),
+          '@time' => (int) microtime(TRUE),
       ]),
     ];
   }

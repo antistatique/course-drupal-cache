@@ -14,6 +14,7 @@ use Drupal\Core\Block\BlockBase;
  */
 class UncacheableBlock extends BlockBase {
   public function build() {
+
     usleep(500*1000); // Pretend we're computing a better forecast 👍
     return [
       '#markup' => $this->t('<p>Weather forecast at @time: ☔️</p>', [
