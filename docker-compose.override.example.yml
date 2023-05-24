@@ -12,7 +12,7 @@ services:
 
     #volumes:
     # Challenges
-    #   - ../challenges/challenge-01/module/challenge_01:/var/www/web/modules/custom/challenge_01
+    #   - ../course-drupal-cache-challenges/challenges/challenge-01/module/challenge_01:/var/www/web/modules/custom/challenge_01
 
     # For Windows only:
     # build:

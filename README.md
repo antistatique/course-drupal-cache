@@ -5,7 +5,7 @@ It uses 🐳 [Docker](http://docker.com/) for running.
 
 ## 🐳 Docker Install
 
-### Project setup≤
+### Project setup
 
 ```bash
 cp docker-compose.override-example.yml docker-compose.override.yml
