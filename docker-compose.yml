@@ -26,7 +26,7 @@ services:
       # - ./web/modules/custom:/var/www/web/modules/custom
       - ./web/sites/default/settings.development.php:/var/www/web/sites/default/settings.development.php
       # Files
-      - ./web/sites/default/files:/var/www/web/sites/default/files
+      # - ./web/sites/default/files:/var/www/web/sites/default/files
 
   # Database
   db:
