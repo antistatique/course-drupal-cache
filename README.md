@@ -14,8 +14,8 @@ Welcome to the companion repository for the course "Drupal - Rendering & Caching
 
 ## 👾 Challenges
 
-- [Challenge #1 - Caches Anatomy](./challenges/challenge_01.md)
-- [Challenge #2 - Invalidation cache-tags](./challenges/challenge_02.md)
+- [Challenge #1 - Caches Anatomy](./challenges/challenge-01/README.md)
+- [Challenge #2 - Invalidation cache-tags](./challenges/challenge-02/README.md)
 
 ## 🧨 Getting Started
 
