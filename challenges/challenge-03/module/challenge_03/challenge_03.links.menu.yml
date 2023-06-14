@@ -1,0 +1,11 @@
+challenge_03:
+  title: Challenge 03
+  parent: system.admin
+  route_name: challenge_03.admin
+  weight: 100
+
+challenge_03_settings:
+  title: Settings
+  parent: challenge_03
+  route_name: challenge_03.settings
+  weight: 10
