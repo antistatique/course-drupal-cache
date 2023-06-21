@@ -97,7 +97,7 @@ final class ChallengeSettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function getFormId(): string {
-    return 'vernier_layout_settings';
+    return 'challenge_03_settings';
   }
 
   /**
