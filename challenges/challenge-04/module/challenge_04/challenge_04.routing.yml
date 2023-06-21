@@ -1,0 +1,22 @@
+challenge_04.index:
+    path: '/challenge-04'
+    defaults:
+        _controller: '\Drupal\challenge_04\Controller\ChallengeController::index'
+    requirements:
+        _permission: 'access content'
+
+challenge_04.admin:
+  path: '/admin/challenge-04'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Challenge 04'
+  requirements:
+    _permission: 'administer site configuration'
+
+challenge_04.settings:
+  path: '/admin/challenge-04/settings'
+  defaults:
+    _form: 'Drupal\challenge_04\Form\ChallengeSettingsForm'
+    _title: 'Settings'
+  requirements:
+    _permission: 'administer site configuration'

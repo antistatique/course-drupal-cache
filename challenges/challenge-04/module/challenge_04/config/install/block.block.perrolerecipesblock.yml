@@ -2,23 +2,23 @@ langcode: en
 status: true
 dependencies:
   module:
-    - challenge_03
+    - challenge_04
     - system
   theme:
     - umami
-id: recipescollectionblock
+id: perrolerecipesblock
 theme: umami
 region: sidebar
 weight: 0
 provider: null
-plugin: challenge_03_recipes_block
+plugin: challenge_04_recipes_block
 settings:
-  id: challenge_03_recipes_block
-  label: 'Recipes Collection block'
+  id: challenge_04_recipes_block
+  label: 'Per Role Recipes Collection block'
   label_display: '0'
-  provider: challenge_03
+  provider: challenge_04
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /challenge-03
+    pages: /challenge-04
