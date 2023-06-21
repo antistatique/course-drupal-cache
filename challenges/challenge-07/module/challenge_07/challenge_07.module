@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Challenge 07 module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function challenge_07_theme(): array {
+    return [
+      'challenge_07__myaccount_block' => [
+        'variables' => [
+          'is_anonymous' => null,
+          'display_name' => null,
+          'user_id' => null,
+        ],
+        'template' => 'block--challenge-07--my-account',
+      ],
+    ];
+}

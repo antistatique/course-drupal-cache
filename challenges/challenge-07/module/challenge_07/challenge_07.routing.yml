@@ -1,0 +1,6 @@
+challenge_07.index:
+    path: '/challenge-07'
+    defaults:
+        _controller: '\Drupal\challenge_07\Controller\ChallengeController::index'
+    requirements:
+        _permission: 'access content'

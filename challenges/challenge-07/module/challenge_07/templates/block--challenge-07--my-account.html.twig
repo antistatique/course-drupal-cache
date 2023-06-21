@@ -1,0 +1,5 @@
+{% if variables.is_anonymous %}
+  <a href="{{ path('user.login') }}" class="">Login</a>
+{% else %}
+  <div class="">{{ display_name }}</div>
+{% endif %}

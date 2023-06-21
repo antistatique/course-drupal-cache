@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - challenge_07
+    - system
+  theme:
+    - umami
+id: myaccountblock
+theme: umami
+region: content
+weight: -7
+provider: null
+plugin: challenge_07_myaccount_block
+settings:
+  id: challenge_07_myaccount_block
+  label: 'My account block'
+  label_display: visible
+  provider: challenge_07
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/challenge-07'
