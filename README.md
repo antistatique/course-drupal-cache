@@ -18,6 +18,7 @@ Welcome to the companion repository for the course "Drupal - Rendering & Caching
 - [Challenge #2 - Invalidation cache-tags](./challenges/challenge-02/README.md)
 - [Challenge #3 - Invalidation custom cache-tags](./challenges/challenge-03/README.md)
 - [Challenge #4 - Per user Role Cache](./challenges/challenge-04/README.md)
+- [Challenge #5 - Invalidation caches over time](./challenges/challenge-05/README.md)
 
 ## 🧨 Getting Started
 

@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Challenge 05 module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function challenge_05_theme(): array {
+    return [
+      'challenge_05___random_recipe_block' => [
+        'variables' => ['recipe' => null, 'time' => null],
+        'template' => 'block--challenge-05--random-recipe',
+      ],
+    ];
+}
