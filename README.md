@@ -21,6 +21,7 @@ Welcome to the companion repository for the course "Drupal - Rendering & Caching
 - [Challenge #5 - Invalidation caches over time](./challenges/challenge-05/README.md)
 - [Challenge #6 - Uncacheable Block](./challenges/challenge-06/README.md)
 - [Challenge #7 - Caching Block for anonymous & Session aware](./challenges/challenge-07/README.md)
+- [Challenge #8 - Caching Block for external API with failover](./challenges/challenge-08/README.md)
 
 ## 🧨 Getting Started
 

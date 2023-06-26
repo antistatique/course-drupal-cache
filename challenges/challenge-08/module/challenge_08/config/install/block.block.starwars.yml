@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - challenge_08
+    - system
+  theme:
+    - umami
+id: starwars
+theme: umami
+region: content
+weight: -7
+provider: null
+plugin: challenge_08_starwars_block
+settings:
+  id: challenge_08_starwars_block
+  label: 'Star Wars block'
+  label_display: visible
+  provider: challenge_08
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/challenge-08'
