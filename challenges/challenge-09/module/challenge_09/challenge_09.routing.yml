@@ -1,0 +1,6 @@
+challenge_09.index:
+    path: '/challenge-09'
+    defaults:
+        _controller: '\Drupal\challenge_09\Controller\ChallengeController::index'
+    requirements:
+        _permission: 'access content'
