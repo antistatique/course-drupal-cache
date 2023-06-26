@@ -18,7 +18,7 @@ use Drupal\user\Entity\User;
 class CacheableBlock extends BlockBase {
   public function build() {
     return [
-      '#markup' => $this->t('%name runs this site!.', [
+      '#markup' => $this->t('<p>%name runs this site!.</p>', [
         '%name' => User::load(1)->getAccountName(),
       ]),
     ];

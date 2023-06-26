@@ -14,7 +14,7 @@ use Drupal\Core\Block\BlockBase;
  */
 class PersonalizedPerSessionBlock extends BlockBase {
   public function build() {
-    $funny_emojis = ['🤷‍', '🙈', '🐏', '😹'];
+    $funny_emojis = ['🧑‍🏫', '🐰', '🪄', '🎩'];
 
     return [
       '#markup' => $this->t('<p>Funny emoji just for you: @emoji</p>
