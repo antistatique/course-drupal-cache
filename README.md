@@ -23,6 +23,7 @@ Welcome to the companion repository for the course "Drupal - Rendering & Caching
 - [Challenge #7 - Caching Block for anonymous & Session aware](./challenges/challenge-07/README.md)
 - [Challenge #8 - Caching Block for external API with failover](./challenges/challenge-08/README.md)
 - [Challenge #9 - Per Country Cache](./challenges/challenge-09/README.md)
+- [Challenge #10 - Caching PHP Computation](./challenges/challenge-10/README.md)
 
 ## 🧨 Getting Started
 

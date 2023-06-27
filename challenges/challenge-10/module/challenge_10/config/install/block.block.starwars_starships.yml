@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - challenge_10
+    - system
+  theme:
+    - umami
+id: starwars_starships
+theme: umami
+region: content
+weight: -7
+provider: null
+plugin: challenge_10_starwars_starships_block
+settings:
+  id: challenge_10_starwars_starships_block
+  label: 'Star Wars Jedi block'
+  label_display: visible
+  provider: challenge_10
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/challenge-10'
