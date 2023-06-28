@@ -4,17 +4,14 @@ namespace Drupal\challenge_08\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
-use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Drupal\Core\Session\AccountInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\State\StateInterface;
 
 /**
  * Star Wars block.
  *
  * @Block(
- *   id="challenge_08_starwars_block",
- *   admin_label = @Translation("Star Wars block")
+ *     id="challenge_08_starwars_block",
+ *     admin_label=@Translation("Star Wars block")
  * )
  */
 class StarWarsBlock extends BlockBase implements ContainerFactoryPluginInterface {
@@ -46,7 +43,8 @@ class StarWarsBlock extends BlockBase implements ContainerFactoryPluginInterface
     try {
       $response = \Drupal::httpClient()->get('https://swapi.dev/api/planets');
       // $response = \Drupal::httpClient()->get('https://swapi.dev/planets');
-    } catch (\Exception $e) {
+    }
+    catch (\Exception $e) {
       return [
         '#markup' => $this->t('<p>The SWAPI API fails.</p>'),
       ];
@@ -54,7 +52,7 @@ class StarWarsBlock extends BlockBase implements ContainerFactoryPluginInterface
 
     $planets = json_decode($response->getBody()->getContents(), TRUE);
 
-    $list = array_map(function($element): string {
+    $list = array_map(static function ($element): string {
       return $element['name'];
     }, $planets['results']);
 

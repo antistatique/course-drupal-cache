@@ -10,8 +10,8 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Star Wars Starships block.
  *
  * @Block(
- *   id="challenge_10_starwars_starships_block",
- *   admin_label = @Translation("Star Wars Starships block")
+ *     id="challenge_10_starwars_starships_block",
+ *     admin_label=@Translation("Star Wars Starships block")
  * )
  */
 class StarWarsStarshipsBlock extends BlockBase implements ContainerFactoryPluginInterface {
@@ -47,14 +47,15 @@ class StarWarsStarshipsBlock extends BlockBase implements ContainerFactoryPlugin
       // $response = \Drupal::httpClient()->get('https://swapi.dev/starships');
 
       $data = $response->getBody()->getContents();
-    } catch (\Exception $e) {
+    }
+    catch (\Exception $e) {
       return [
         '#markup' => $this->t('<p>The SWAPI API fails.</p>'),
       ];
     }
     $planets = json_decode($data, TRUE);
 
-    $list = array_map(function($element): string {
+    $list = array_map(static function ($element): string {
       return $element['name'];
     }, $planets['results']);
 

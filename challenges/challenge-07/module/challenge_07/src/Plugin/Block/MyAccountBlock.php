@@ -4,17 +4,15 @@ namespace Drupal\challenge_07\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
-use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Session\AccountInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\State\StateInterface;
 
 /**
  * My Account block.
  *
  * @Block(
- *   id="challenge_07_myaccount_block",
- *   admin_label = @Translation("My Account block")
+ *     id="challenge_07_myaccount_block",
+ *     admin_label=@Translation("My Account block")
  * )
  */
 class MyAccountBlock extends BlockBase implements ContainerFactoryPluginInterface {

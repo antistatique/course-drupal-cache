@@ -44,7 +44,7 @@ class RecipesEndpointController extends ControllerBase {
     $difficulty = $request->query->get('difficulty');
 
     $data = [];
-    $response = new JssonResponse($data);
+    $response = new JsonResponse($data);
 
     $query = $this->nodeStorage->getQuery()
       ->accessCheck(TRUE)

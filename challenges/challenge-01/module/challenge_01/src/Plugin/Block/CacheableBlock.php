@@ -2,17 +2,17 @@
 
 namespace Drupal\challenge_01\Plugin\Block;
 
+use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Session\AccountInterface;
-use Drupal\Core\Access\AccessResult;
 use Drupal\user\Entity\User;
 
 /**
  * Cacheable block.
  *
  * @Block(
- *   id="challenge_01_cacheable_block",
- *   admin_label = @Translation("Cacheable block")
+ *     id="challenge_01_cacheable_block",
+ *     admin_label=@Translation("Cacheable block")
  * )
  */
 class CacheableBlock extends BlockBase {
@@ -24,12 +24,12 @@ class CacheableBlock extends BlockBase {
     ];
   }
 
-  protected function blockAccess(AccountInterface $account) {
-    return AccessResult::allowedIf($account->id() == 1);
-  }
-
   public function getCacheTags() {
     return ['user:1'];
+  }
+
+  protected function blockAccess(AccountInterface $account) {
+    return AccessResult::allowedIf($account->id() === 1);
   }
 
 }

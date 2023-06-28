@@ -8,8 +8,8 @@ use Drupal\Core\Block\BlockBase;
  * Personalized per user block.
  *
  * @Block(
- *   id="challenge_01_personalized_per_user_block",
- *   admin_label = @Translation("Personalized per user block")
+ *     id="challenge_01_personalized_per_user_block",
+ *     admin_label=@Translation("Personalized per user block")
  * )
  */
 class PersonalizedPerUserBlock extends BlockBase {
@@ -19,8 +19,8 @@ class PersonalizedPerUserBlock extends BlockBase {
     return [
       '#markup' => $this->t('<p>Today\'s funny emoji just for you: @emoji</p>
         <p>(Hand picked at @time!)</p>', [
-          '@emoji' => $funny_emojis[array_rand($funny_emojis)],
-          '@time' => (int) microtime(TRUE),
+        '@emoji' => $funny_emojis[array_rand($funny_emojis)],
+        '@time' => (int) microtime(TRUE),
       ]),
     ];
   }

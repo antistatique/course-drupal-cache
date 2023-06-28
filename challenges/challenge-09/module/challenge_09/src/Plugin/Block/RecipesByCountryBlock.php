@@ -3,18 +3,16 @@
 namespace Drupal\challenge_09\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\State\StateInterface;
 
 /**
  * Recipes by Country block.
  *
  * @Block(
- *   id="challenge_09_recipes_by_country_block",
- *   admin_label = @Translation("Recipes by Country block")
+ *     id="challenge_09_recipes_by_country_block",
+ *     admin_label=@Translation("Recipes by Country block")
  * )
  */
 class RecipesByCountryBlock extends BlockBase implements ContainerFactoryPluginInterface {
@@ -80,6 +78,7 @@ class RecipesByCountryBlock extends BlockBase implements ContainerFactoryPluginI
     }
 
     $recipes = $this->nodeStorage->loadMultiple($nids);
+
     foreach ($recipes as $recipe) {
       $recipe_output = $this->entityTypeManager
         ->getViewBuilder('node')

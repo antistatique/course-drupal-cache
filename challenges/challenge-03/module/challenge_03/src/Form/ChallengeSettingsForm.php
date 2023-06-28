@@ -4,13 +4,11 @@ namespace Drupal\challenge_03\Form;
 
 use Drupal\Component\Utility\Xss;
 use Drupal\Core\Config\ConfigFactoryInterface;
-use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\State\StateInterface;
 use Drupal\taxonomy\TermStorageInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\taxonomy\TermInterface;
 
 /**
  * Configure Challenge settings form.
@@ -62,6 +60,7 @@ final class ChallengeSettingsForm extends ConfigFormBase {
 
     $recipe_categories = $this->termStorage->loadTree('recipe_category', 0, 1, TRUE);
     $options = [];
+
     foreach ($recipe_categories as $recipe_category) {
       $options[$recipe_category->id()] = $recipe_category->getName();
     }
@@ -107,7 +106,7 @@ final class ChallengeSettingsForm extends ConfigFormBase {
     $values = $form_state->getValues();
     $settings = $this->state->get('challenge_03.settings');
 
-    $category = Xss::filter($values['filtered_collection']['category'], null);
+    $category = Xss::filter($values['filtered_collection']['category'], NULL);
     $settings['filtered_collection']['category'] = $category;
 
     $this->state->set('challenge_03.settings', $settings);

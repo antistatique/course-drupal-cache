@@ -3,17 +3,17 @@
 namespace Drupal\challenge_05\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
-use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Database\Connection;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Random Recipe block.
  *
  * @Block(
- *   id="challenge_05_random_recipe_block",
- *   admin_label = @Translation("Random Recipe block")
+ *     id="challenge_05_random_recipe_block",
+ *     admin_label=@Translation("Random Recipe block")
  * )
  */
 class RandomRecipeBlock extends BlockBase implements ContainerFactoryPluginInterface {
@@ -55,7 +55,6 @@ class RandomRecipeBlock extends BlockBase implements ContainerFactoryPluginInter
       $plugin_definition,
       $container->get('entity_type.manager'),
       $container->get('database')
-
     );
   }
 
@@ -65,7 +64,7 @@ class RandomRecipeBlock extends BlockBase implements ContainerFactoryPluginInter
   public function build(): array {
     $renderer = [
       '#theme' => 'challenge_05___random_recipe_block',
-      '#recipe' => null,
+      '#recipe' => NULL,
       '#time' => (int) microtime(TRUE),
     ];
 

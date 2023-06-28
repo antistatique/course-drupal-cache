@@ -3,18 +3,17 @@
 namespace Drupal\challenge_04\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Session\AccountInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\State\StateInterface;
 
 /**
  * Per Role Recipes Collection block.
  *
  * @Block(
- *   id="challenge_04_recipes_block",
- *   admin_label = @Translation("Per Role Recipes Collection block")
+ *     id="challenge_04_recipes_block",
+ *     admin_label=@Translation("Per Role Recipes Collection block")
  * )
  */
 class PerRoleRecipesBlock extends BlockBase implements ContainerFactoryPluginInterface {
@@ -92,6 +91,7 @@ class PerRoleRecipesBlock extends BlockBase implements ContainerFactoryPluginInt
     }
 
     $recipes = $this->nodeStorage->loadMultiple($nids);
+
     foreach ($recipes as $recipe) {
       $recipe_output = $this->entityTypeManager
         ->getViewBuilder('node')
