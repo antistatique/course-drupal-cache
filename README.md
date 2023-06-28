@@ -24,6 +24,7 @@ Welcome to the companion repository for the course "Drupal - Rendering & Caching
 - [Challenge #8 - Caching Block for external API with failover](./challenges/challenge-08/README.md)
 - [Challenge #9 - Per Country Cache](./challenges/challenge-09/README.md)
 - [Challenge #10 - Caching PHP Computation](./challenges/challenge-10/README.md)
+- [Challenge #11 - Caching API](./challenges/challenge-11/README.md)
 
 ## 🧨 Getting Started
 

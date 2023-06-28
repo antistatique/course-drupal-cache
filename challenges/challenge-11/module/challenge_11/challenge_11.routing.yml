@@ -1,0 +1,6 @@
+challenge_11.index:
+    path: '/challenge-11'
+    defaults:
+        _controller: '\Drupal\challenge_11\Controller\RecipesEndpointController::index'
+    requirements:
+        _permission: 'access content'
