@@ -29,7 +29,7 @@ class CacheableBlock extends BlockBase {
   }
 
   protected function blockAccess(AccountInterface $account) {
-    return AccessResult::allowedIf($account->id() === 1);
+    return AccessResult::allowedIf($account->id() === "1");
   }
 
 }
