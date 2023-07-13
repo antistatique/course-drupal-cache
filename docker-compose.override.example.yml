@@ -12,7 +12,17 @@ services:
 
     #volumes:
     # Challenges
-    #   - ../course-drupal-cache-challenges/challenges/challenge-01/module/challenge_01:/var/www/web/modules/custom/challenge_01
+      #- ../course-drupal-cache-challenges/challenges/challenge-01/module/challenge_01:/var/www/web/modules/custom/challenge_01
+      #- ../course-drupal-cache-challenges/challenges/challenge-02/module/challenge_02:/var/www/web/modules/custom/challenge_02
+      #- ../course-drupal-cache-challenges/challenges/challenge-03/module/challenge_03:/var/www/web/modules/custom/challenge_03
+      #- ../course-drupal-cache-challenges/challenges/challenge-04/module/challenge_04:/var/www/web/modules/custom/challenge_04
+      #- ../course-drupal-cache-challenges/challenges/challenge-05/module/challenge_05:/var/www/web/modules/custom/challenge_05
+      #- ../course-drupal-cache-challenges/challenges/challenge-06/module/challenge_06:/var/www/web/modules/custom/challenge_06
+      #- ../course-drupal-cache-challenges/challenges/challenge-07/module/challenge_07:/var/www/web/modules/custom/challenge_07
+      #- ../course-drupal-cache-challenges/challenges/challenge-08/module/challenge_08:/var/www/web/modules/custom/challenge_08
+      #- ../course-drupal-cache-challenges/challenges/challenge-09/module/challenge_09:/var/www/web/modules/custom/challenge_09
+      #- ../course-drupal-cache-challenges/challenges/challenge-10/module/challenge_10:/var/www/web/modules/custom/challenge_10
+      #- ../course-drupal-cache-challenges/challenges/challenge-11/module/challenge_11:/var/www/web/modules/custom/challenge_11
 
     # For Windows only:
     # build:
