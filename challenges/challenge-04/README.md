@@ -11,4 +11,4 @@ Alter the existing Block `PerRoleRecipesBlock in order to display the following 
 | Author             | Medium           |
 | Administrator      | Hard             |
 
-See instructions on 👉 https://www.notion.so/Challenge-04-Per-user-Role-Cache-ac02bbc8511c4f86ae0eec3e37882835
+See instructions on 👉 https://wengerk.notion.site/Challenge-04-Per-user-Role-Cache-ac02bbc8511c4f86ae0eec3e37882835
