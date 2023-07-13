@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - challenge_12
+    - system
+  theme:
+    - umami
+id: weather
+theme: umami
+region: content
+weight: -7
+provider: null
+plugin: challenge_12_weather_block
+settings:
+  id: challenge_12_weather_block
+  label: 'Weather block'
+  label_display: visible
+  provider: challenge_12
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/challenge-12'
